@@ -1,6 +1,6 @@
 // question 1
 const cat = {
-    complain: function () {
+    complain: function() {
         console.log("Meow!");
     }
 }
@@ -52,37 +52,37 @@ const cats = [
 ];
 
 function catList(list) {
-    for (let i = 0; i < cats.length; i++) {
-        console.log(cats[i].name);
+    for(let i = 0; i < list.length; i++) {
+        console.log(list[i].name);
     }
 }
 
-catList();
+catList(cats);
 
 
 // question 8
-const container = document.querySelector(".cat-container");
-
-let html = "";
-
 function createCats(cats) {
-    for (let i = 0; i < cats.length; i++) {
 
-        let noAge = "Age unknown";
+    let html = "";
+
+    for(let i = 0; i < cats.length; i++) {
+
+        let catAge = "Age unknown";
 
         if (cats[i].age) {
-            noAge = cats[i].age;
+            catAge = cats[i].age;
         }
 
         html += `<div>
-                    <h5>${cats[i].name}</h5>
-                    <p>${noAge}</p>
+                    <h5>Name: ${cats[i].name}</h5>
+                    <p>Age: ${catAge}</p>
                 </div>`;
-
-        return html;
     }
+
+    return html;
 }
 
-createCats();
+const newHtml = createCats(cats);
 
-container.innerHTML = html;
+const catContainer = document.querySelector(".cat-container");
+catContainer.innerHTML = newHtml;
