@@ -55,7 +55,7 @@ const cats = [
 ];
 
 function catList(list) {
-    for (let i = 0; i < list.length; i++) {
+    for(let i = 0; i < list.length; i++) {
         console.log(list[i].name);
     }
 }
