@@ -1,6 +1,6 @@
 // question 1
 const cat = {
-    complain: function() {
+    complain: function () {
         console.log("Meow!");
     }
 }
@@ -28,6 +28,9 @@ for(let i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.color = "red";
 }
 
+// or
+// paragraphs.forEach((paragraphs) => (paragraphs.style.color = "red"));
+
 
 // question 6
 const resultsContainer = document.querySelector(".results");
@@ -52,7 +55,7 @@ const cats = [
 ];
 
 function catList(list) {
-    for(let i = 0; i < list.length; i++) {
+    for (let i = 0; i < list.length; i++) {
         console.log(list[i].name);
     }
 }
