@@ -28,9 +28,6 @@ for(let i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.color = "red";
 }
 
-// or
-// paragraphs.forEach((paragraphs) => (paragraphs.style.color = "red"));
-
 
 // question 6
 const resultsContainer = document.querySelector(".results");
@@ -65,7 +62,6 @@ catList(cats);
 
 // question 8
 function createCats(cats) {
-
     let html = "";
 
     for(let i = 0; i < cats.length; i++) {
