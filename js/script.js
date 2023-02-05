@@ -8,7 +8,7 @@ const cat = {
 cat.complain();
 
 
-// question 2
+// question 2...
 const heading = document.querySelector("h3");
 heading.innerHTML = "Updated heading";
 
